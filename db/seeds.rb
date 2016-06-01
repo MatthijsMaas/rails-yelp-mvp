@@ -6,7 +6,11 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+# category: { chinese: 0, italian: 1, japanese: 2, french: 3, belgian: 4}
+
 Restaurant.destroy_all
+
+
 restaurants_attributes = [
   {
     name:         "Epicure au Bristol",
@@ -24,6 +28,24 @@ restaurants_attributes = [
     name:         "Le pré catelan",
     address:      "route de Suresnes 75016 Paris",
     phone_number:  "624522454",
+    category:        1
+  },
+    {
+    name:         "Shan Shan",
+    address:      "3straat, Den Haag",
+    phone_number:  "62455633422454",
+    category:        2
+  },
+    {
+    name:         "Thousand Autumns",
+    address:      "Rue David Mitchell, Neo-Seoul",
+    phone_number:  "52013578",
+    category:        0
+  },
+    {
+    name:         "Caesar",
+    address:      "Imperial Avenue",
+    phone_number:  "624345555555",
     category:        1
   }
 ]

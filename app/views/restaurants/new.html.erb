@@ -1,0 +1,22 @@
+
+
+<h1>New restaurant... Reconstituting Data Matrices...</h1>
+
+<div class="wrapper">
+  <%= form_for(@restaurant) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <br>
+
+  <%= f.label :address %>
+  <%= f.text_field :address %>
+  <br>
+  <%= f.label :phone_number %>
+  <%= f.text_field :phone_number %>
+  <br>
+  <%= f.label :category %>
+  <%= f.select :category, Restaurant.categories %>
+  <br>
+  <%= f.submit %>
+  <% end %>
+</div>
